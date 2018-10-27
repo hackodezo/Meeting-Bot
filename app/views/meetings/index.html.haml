@@ -1,0 +1,27 @@
+.card
+  .card-body
+    %h2.card-title.pull-left Meetings
+    = link_to 'Add New Meeting', new_meeting_path, class: "btn btn-primary pull-right"
+    %table.table
+      %thead
+        %tr
+          %th Name
+          %th Venue
+          %th Agenda
+          %th Meeting date
+          %th Duration
+          %th
+          %th
+          %th
+
+      %tbody
+        - @meetings.each do |meeting|
+          %tr
+            %td= meeting.name
+            %td= meeting.venue
+            %td= meeting.agenda
+            %td= meeting.meeting_date
+            %td= distance_of_time_in_words(meeting.start_time, meeting.end_time)
+            %td= link_to 'Show', meeting
+            %td= link_to 'Edit', edit_meeting_path(meeting)
+            %td= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' }

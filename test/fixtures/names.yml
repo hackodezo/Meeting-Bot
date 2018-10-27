@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  venue: MyString
+  agenda: MyString
+  meeting_date: 2018-10-27
+  meeting_time: 2018-10-27 15:46:14
+  duration: 2018-10-27 15:46:14
+
+two:
+  venue: MyString
+  agenda: MyString
+  meeting_date: 2018-10-27
+  meeting_time: 2018-10-27 15:46:14
+  duration: 2018-10-27 15:46:14

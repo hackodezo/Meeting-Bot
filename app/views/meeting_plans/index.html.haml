@@ -1,0 +1,21 @@
+%h1 Listing meeting_plans
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @meeting_plans.each do |meeting_plan|
+      %tr
+        %td= meeting_plan.name
+        %td= link_to 'Show', meeting_plan
+        %td= link_to 'Edit', edit_meeting_plan_path(meeting_plan)
+        %td= link_to 'Destroy', meeting_plan, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Meeting plan', new_meeting_plan_path

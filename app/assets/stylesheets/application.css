@@ -11,7 +11,18 @@
  * It is generally better to create a new file per style scope.
  *
  *= require admin/assets/plugins/bootstrap/css/bootstrap.min
- *= require admin/css/style.css
- *= require admin/css/colors/blue.css
+ *= require admin/css/style
+ *= require admin/css/colors/blue
+ *= require admin/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min
+ *= require admin/assets/plugins/clockpicker/dist/jquery-clockpicker.min
  *= require_self
  */
+
+ .time-select{
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  height: 40px;
+ }
