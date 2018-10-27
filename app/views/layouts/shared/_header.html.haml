@@ -258,28 +258,28 @@
                     .u-img
                       %img{:alt => "user", :src => "../assets/images/users/1.jpg"}/
                     .u-text
-                      %h4 Steave Jobs
-                      %p.text-muted varun@gmail.com
+                      %h4 #{current_user.email}
+                      %p.text-muted #{current_user.email}
                       %a.btn.btn-rounded.btn-danger.btn-sm{:href => "profile.html"} View Profile
                 %li.divider{:role => "separator"}
                 %li
                   %a{:href => "#"}
                     %i.ti-user
                     My Profile
-                %li
-                  %a{:href => "#"}
-                    %i.ti-wallet
-                    My Balance
-                %li
-                  %a{:href => "#"}
-                    %i.ti-email
-                    Inbox
-                %li.divider{:role => "separator"}
-                %li
-                  %a{:href => "#"}
-                    %i.ti-settings
-                    Account Setting
-                %li.divider{:role => "separator"}
+                -#%li
+                -#  %a{:href => "#"}
+                -#    %i.ti-wallet
+                -#    My Balance
+                -#%li
+                -#  %a{:href => "#"}
+                -#    %i.ti-email
+                -#    Inbox
+                -#%li.divider{:role => "separator"}
+                -#%li
+                -#  %a{:href => "#"}
+                -#    %i.ti-settings
+                -#    Account Setting
+                -#%li.divider{:role => "separator"}
                 %li
                   %a{:href => "#"}
                     %i.fa.fa-power-off
