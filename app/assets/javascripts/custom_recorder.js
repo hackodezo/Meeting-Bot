@@ -46,9 +46,10 @@ $(document).ready(function(){
     alert("The conversion to MP3 will take some time (even 10 minutes), so please wait....");
     Fr.voice.export(function(base64){
       var data = new FormData();
-      data.append('file', blob);
+      data.append('file', base64);
+      data.append('authenticity_token', $('[name="csrf-token"]')[0].content)
       $.ajax({
-        url: "server.php",
+        url: "/meetings/process_audio",
         type: 'POST',
         data: data,
         contentType: false,
