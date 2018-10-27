@@ -1,3 +1,3 @@
 class UsersController < ApplicationController
-  #layout false
+  layout false
 end

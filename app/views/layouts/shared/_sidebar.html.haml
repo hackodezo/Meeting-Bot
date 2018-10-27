@@ -5,7 +5,7 @@
     .user-profile
       / User profile image
       .profile-img
-        %img{:alt => "user", :src => "../assets/images/users/1.jpg"}/
+        %img{:alt => "user", :src => "#{image_path 'admin/assets/images/users/1.jpg' }"}/
       / User profile text
       .profile-text
         %a.dropdown-toggle.link.u-dropdown{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
