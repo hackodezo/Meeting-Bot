@@ -21,6 +21,7 @@ gem 'haml-rails'
 gem 'html2haml'
 gem 'number_in_words', '~> 0.0.1'
 gem 'devise'
+gem 'google-cloud-speech'
 
 group :development, :test do
   gem 'pry-rails'
