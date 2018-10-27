@@ -1,7 +1,7 @@
 (function ($, F) {
 	F.Filtering = F.Component.extend(/** @lends FooTable.Filtering */{
 		/**
-		 * The filtering component adds a search input and column selector dropdown to the table allowing users to filter the using space delimited queries.
+		 * The filtering component adds a search input and column selector dropdown to the table allowing employees to filter the using space delimited queries.
 		 * @constructs
 		 * @extends FooTable.Component
 		 * @param {FooTable.Table} table - The parent {@link FooTable.Table} object for the component.

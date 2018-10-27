@@ -5,11 +5,12 @@
     .user-profile
       / User profile image
       .profile-img
-        %img{:alt => "user", :src => "#{image_path 'admin/assets/images/users/1.jpg' }"}/
+        -#x%img{:alt => "user", :src => "#{image_path 'admin/assets/images/employees/1.jpg' }"}/
       / User profile text
       .profile-text
         %a.dropdown-toggle.link.u-dropdown{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-          #{current_user.email}
+          -if user_signed_in?
+            #{current_user.email}
           %span.caret
         .dropdown-menu.animated.flipInY
           %a.dropdown-item{:href => "#"}
@@ -52,7 +53,7 @@
             %span.hide-menu Clients
             %span.label.label-rounded.label-success 5
         %li
-          %a{"aria-expanded" => "false", :href => "#{}"}
+          %a{"aria-expanded" => "false", :href => "#{projects_path}"}
             %i.mdi.mdi-chart-bubble
             %span.hide-menu Projects
             %span.label.label-rounded.label-success 5

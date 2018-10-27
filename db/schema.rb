@@ -20,6 +20,12 @@ ActiveRecord::Schema.define(version: 20181027133828) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+    
+  create_table "projects", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "meetings", force: :cascade do |t|
     t.string "name"
@@ -44,6 +50,8 @@ ActiveRecord::Schema.define(version: 20181027133828) do
     t.datetime "last_sign_in_at"
     t.inet "current_sign_in_ip"
     t.inet "last_sign_in_ip"
+    t.string "name"
+    t.string "employee_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true

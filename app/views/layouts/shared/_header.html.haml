@@ -107,7 +107,7 @@
                     / Message
                     %a{:href => "#"}
                       .user-img
-                        %img.img-circle{:alt => "user", :src => "../assets/images/users/1.jpg"}/
+                        %img.img-circle{:alt => "user", :src => "../assets/images/employees/1.jpg"}/
                         %span.profile-status.online.pull-right
                       .mail-contnet
                         %h5 Pavan kumar
@@ -116,7 +116,7 @@
                     / Message
                     %a{:href => "#"}
                       .user-img
-                        %img.img-circle{:alt => "user", :src => "../assets/images/users/2.jpg"}/
+                        %img.img-circle{:alt => "user", :src => "../assets/images/employees/2.jpg"}/
                         %span.profile-status.busy.pull-right
                       .mail-contnet
                         %h5 Sonu Nigam
@@ -125,7 +125,7 @@
                     / Message
                     %a{:href => "#"}
                       .user-img
-                        %img.img-circle{:alt => "user", :src => "../assets/images/users/3.jpg"}/
+                        %img.img-circle{:alt => "user", :src => "../assets/images/employees/3.jpg"}/
                         %span.profile-status.away.pull-right
                       .mail-contnet
                         %h5 Arijit Sinh
@@ -134,7 +134,7 @@
                     / Message
                     %a{:href => "#"}
                       .user-img
-                        %img.img-circle{:alt => "user", :src => "../assets/images/users/4.jpg"}/
+                        %img.img-circle{:alt => "user", :src => "../assets/images/employees/4.jpg"}/
                         %span.profile-status.offline.pull-right
                       .mail-contnet
                         %h5 Pavan kumar
@@ -250,16 +250,17 @@
                 %i.ti-search
           %li.nav-item.dropdown
             %a.nav-link.dropdown-toggle.text-muted.waves-effect.waves-dark{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => ""}
-              %img.profile-pic{:alt => "user", :src => "#{image_path 'admin/assets/images/users/1.jpg'}"}
+              -#x%img.profile-pic{:alt => "user", :src => "#{image_path 'admin/assets/images/employees/1.jpg'}"}
             .dropdown-menu.dropdown-menu-right.animated.flipInY
               %ul.dropdown-user
                 %li
                   .dw-user-box
                     .u-img
-                      %img{:alt => "user", :src => "#{image_path 'admin/assets/images/users/1.jpg'}"}/
+                      -#%img{:alt => "user", :src => "#{image_path 'admin/assets/images/employees/1.jpg'}"}/
                     .u-text
-                      %h4 #{current_user.email}
-                      %p.text-muted #{current_user.email}
+                      -if user_signed_in?
+                        %h4 #{current_user.email}
+                        %p.text-muted #{current_user.email}
                       %a.btn.btn-rounded.btn-danger.btn-sm{:href => "profile.html"} View Profile
                 %li.divider{:role => "separator"}
                 %li
