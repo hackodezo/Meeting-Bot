@@ -1,0 +1,50 @@
+= form_for @meeting, class: 'form', :html => {autocomplete: "off"} do |f|
+  - if @meeting.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@meeting.errors.count, "error")} prohibited this meeting from being saved:"
+      %ul
+        - @meeting.errors.full_messages.each do |message|
+          %li= message
+
+  .form-group.m-t-40.row
+    = f.label :name, class: 'col-2 col-form-label'
+    .col-10
+      = f.text_field :name, class: 'form-control'
+  .form-group.m-t-40.row
+    = f.label :meeting_plan_id, class: 'col-2 col-form-label'
+    .col-10
+      = f.collection_select :meeting_plan_id, MeetingPlan.all, :id, :name, {prompt: "Select Meeting Plan"}, { class: "form-control" }
+  .form-group.m-t-40.row
+    = f.label :venue, class: 'col-2 col-form-label'
+    .col-10
+      = f.text_field :venue, class: 'form-control'
+  .form-group.m-t-40.row
+    = f.label :agenda, class: 'col-2 col-form-label'
+    .col-10
+      = f.text_field :agenda, class: 'form-control'
+  .form-group.m-t-40.row
+    = f.label :meeting_date, class: 'col-2 col-form-label'
+    .col-10
+      = f.text_field :meeting_date, class: 'form-control complex-colorpicker', id: "datepicker-autoclose"
+  .form-group.m-t-40.row
+    = f.label :start_time, class: 'col-2 col-form-label'
+    .col-10
+      = f.text_field :start_time, class: 'form-control time-picker'
+  .form-group.m-t-40.row
+    = f.label :end_time, class: 'col-2 col-form-label'
+    .col-10
+      = f.text_field :end_time, class: 'form-control time-picker'
+  .actions.text-center
+    = f.submit 'Add New Meeting', class: 'btn btn-success btn-md'
+
+:javascript
+  $('#datepicker-autoclose').datepicker({
+        autoclose: true,
+        todayHighlight: true
+    });
+  $('.time-picker').clockpicker({
+        placement: 'bottom',
+        align: 'left',
+        autoclose: true,
+        'default': 'now'
+    });

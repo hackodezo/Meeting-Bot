@@ -1,0 +1,13 @@
+= form_for @meeting_plan do |f|
+  - if @meeting_plan.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@meeting_plan.errors.count, "error")} prohibited this meeting_plan from being saved:"
+      %ul
+        - @meeting_plan.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .actions
+    = f.submit 'Save'

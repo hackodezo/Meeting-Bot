@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :meeting_plans
+  resources :meetings
   root 'dashboard#index'
 
   devise_for :users
