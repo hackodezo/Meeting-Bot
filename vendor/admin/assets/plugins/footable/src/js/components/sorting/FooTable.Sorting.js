@@ -1,7 +1,7 @@
 (function ($, F) {
 	F.Sorting = F.Component.extend(/** @lends FooTable.Sorting */{
 		/**
-		 * The sorting component adds a small sort button to specified column headers allowing users to sort those columns in the table.
+		 * The sorting component adds a small sort button to specified column headers allowing employees to sort those columns in the table.
 		 * @constructs
 		 * @extends FooTable.Component
 		 * @param {FooTable.Table} table - The parent {@link FooTable.Table} object for the component.

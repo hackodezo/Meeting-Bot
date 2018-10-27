@@ -94,7 +94,7 @@
 	 */
 
 	/**
-	 * This object provides a subset of the methods of the Deferred object (then, done, fail, always, pipe, and state) to prevent users from changing the state of the Deferred.
+	 * This object provides a subset of the methods of the Deferred object (then, done, fail, always, pipe, and state) to prevent employees from changing the state of the Deferred.
 	 * @typedef {object} jQuery.Promise
 	 * @see {@link http://api.jquery.com/Types/#Promise}
 	 */

@@ -1,7 +1,7 @@
 (function($, F){
 	F.Paging = F.Component.extend(/** @lends FooTable.Paging */{
 		/**
-		 * The paging component adds a pagination control to the table allowing users to navigate table rows via pages.
+		 * The paging component adds a pagination control to the table allowing employees to navigate table rows via pages.
 		 * @constructs
 		 * @extends FooTable.Component
 		 * @param {FooTable.Table} table - The parent {@link FooTable.Table} object for the component.

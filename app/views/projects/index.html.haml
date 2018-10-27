@@ -1,0 +1,48 @@
+.container-fluid
+  .row.page-titles
+    .col-md-6.col-8.align-self-center
+      %h3.text-themecolor.m-b-0.m-t-0 Projects
+      %ol.breadcrumb
+        %li.breadcrumb-item
+          %a{:href => "#{projects_path}"} Home
+        %li.breadcrumb-item.active Projects
+    .col-md-6.col-4.align-self-center
+      -#%button.right-side-toggle.waves-effect.waves-light.btn-info.btn-circle.btn-sm.pull-right.m-l-10
+      -#  %i.ti-settings.text-white
+      %button.btn.pull-right.hidden-sm-down.btn-success
+        %i.mdi.mdi-plus-circle
+        Create
+      -#.dropdown.pull-right.m-r-10.hidden-sm-down
+      -#  %button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+      -#    January 2017
+      -#  .dropdown-menu{"aria-labelledby" => "dropdownMenuButton"}
+      -#    %a.dropdown-item{:href => "#"} February 2017
+      -#    %a.dropdown-item{:href => "#"} March 2017
+      -#    %a.dropdown-item{:href => "#"} April 2017
+  .row
+    .col-lg-12
+      .card
+        .card-body
+          %h4.card-title Employees
+          %h6.card-subtitle
+          .table-responsive
+            %table.table
+              %thead
+                %tr
+                  %th #
+                  %th Name
+                  %th Actions
+              %tbody
+                -@projects.each_with_index do |user,index|
+                  %tr
+                    %td #{index + 1}
+                    %td #{user.try(:name)}
+                    %td.text-nowrap
+                      %a{"data-original-title" => "Edit", "data-toggle" => "tooltip", :href => "#"}
+                        %i.fa.fa-pencil.text-inverse.m-r-10
+                      %a{"data-original-title" => "Close", "data-toggle" => "tooltip", :href => "#"}
+                        %i.fa.fa-close.text-danger
+
+
+
+
