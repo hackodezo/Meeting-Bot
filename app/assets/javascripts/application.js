@@ -11,4 +11,12 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require_tree .
+//= require admin/assets/plugins/jquery/jquery.min
+//= require admin/assets/plugins/bootstrap/js/popper.min
+//= require admin/assets/plugins/bootstrap/js/bootstrap.min
+//= require admin/js/jquery.slimscroll
+//= require admin/js/waves
+//= require admin/js/sidebarmenu
+//= require admin/assets/plugins/sticky-kit-master/dist/sticky-kit.min
+//= require admin/js/custom.min
+//= require admin/assets/plugins/styleswitcher/jQuery.style.switcher
