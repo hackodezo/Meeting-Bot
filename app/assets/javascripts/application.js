@@ -22,3 +22,6 @@
 //= require admin/assets/plugins/styleswitcher/jQuery.style.switcher
 //= require admin/assets/plugins/bootstrap-datepicker/bootstrap-datepicker.min
 //= require admin/assets/plugins/clockpicker/dist/jquery-clockpicker.min
+//= require recorder
+//= require jquery_voice
+//= require custom_recorder

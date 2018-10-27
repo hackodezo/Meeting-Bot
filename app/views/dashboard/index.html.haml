@@ -1,2 +1,10 @@
-%h1 Dashboard#index
-%p Find me in app/views/dashboard/index.html.haml
+%audio#audio{:controls => "", :src => ""}
+%div{:style => "margin:10px;"}
+  %a#record.button Record
+  %a#stop.button.disabled.one Reset
+  %a#play.button.disabled.one Play
+  %a#download.button.disabled.one Download
+  %a#base64.button.disabled.one Base64 URL
+  %a#mp3.button.disabled.one MP3 URL
+%input#live.button{:type => "checkbox"}/
+%label{:for => "live"} Live Output
