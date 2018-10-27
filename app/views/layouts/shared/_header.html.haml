@@ -1,0 +1,302 @@
+%body
+  %header.topbar
+    %nav.navbar.top-navbar.navbar-expand-md.navbar-light
+      / ==============================================================
+      / Logo
+      / ==============================================================
+      .navbar-header
+        %a.navbar-brand{:href => "index.html"}
+          / Logo icon
+          %b
+            / You can put here icon as well // <i class="wi wi-sunset"></i> //
+            / Dark Logo icon
+            %img.dark-logo{:alt => "homepage", :src => "../assets/images/logo-icon.png"}/
+            / Light Logo icon
+            %img.light-logo{:alt => "homepage", :src => "../assets/images/logo-light-icon.png"}/
+          / End Logo icon
+          / Logo text
+          %span
+            / dark Logo text
+            %img.dark-logo{:alt => "homepage", :src => "../assets/images/logo-text.png"}/
+            / Light Logo text
+            %img.light-logo{:alt => "homepage", :src => "../assets/images/logo-light-text.png"}/
+      / ==============================================================
+      / End Logo
+      / ==============================================================
+      .navbar-collapse
+        / ==============================================================
+        / toggle and nav items
+        / ==============================================================
+        %ul.navbar-nav.mr-auto.mt-md-0
+          / This is
+          %li.nav-item
+            %a.nav-link.nav-toggler.hidden-md-up.text-muted.waves-effect.waves-dark{:href => "javascript:void(0)"}
+              %i.ti-menu
+          %li.nav-item
+            %a.nav-link.sidebartoggler.hidden-sm-down.text-muted.waves-effect.waves-dark{:href => "javascript:void(0)"}
+              %i.icon-arrow-left-circle
+          / ==============================================================
+          / Comment
+          / ==============================================================
+          %li.nav-item.dropdown
+            %a.nav-link.dropdown-toggle.text-muted.text-muted.waves-effect.waves-dark{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => ""}
+              %i.mdi.mdi-message
+              .notify
+                %span.heartbit
+                %span.point
+            .dropdown-menu.mailbox.animated.bounceInDown
+              %ul
+                %li
+                  .drop-title Notifications
+                %li
+                  .message-center
+                    / Message
+                    %a{:href => "#"}
+                      .btn.btn-danger.btn-circle
+                        %i.fa.fa-link
+                      .mail-contnet
+                        %h5 Luanch Admin
+                        %span.mail-desc Just see the my new admin!
+                        %span.time 9:30 AM
+                    / Message
+                    %a{:href => "#"}
+                      .btn.btn-success.btn-circle
+                        %i.ti-calendar
+                      .mail-contnet
+                        %h5 Event today
+                        %span.mail-desc Just a reminder that you have event
+                        %span.time 9:10 AM
+                    / Message
+                    %a{:href => "#"}
+                      .btn.btn-info.btn-circle
+                        %i.ti-settings
+                      .mail-contnet
+                        %h5 Settings
+                        %span.mail-desc You can customize this template as you want
+                        %span.time 9:08 AM
+                    / Message
+                    %a{:href => "#"}
+                      .btn.btn-primary.btn-circle
+                        %i.ti-user
+                      .mail-contnet
+                        %h5 Pavan kumar
+                        %span.mail-desc Just see the my admin!
+                        %span.time 9:02 AM
+                %li
+                  %a.nav-link.text-center{:href => "javascript:void(0);"}
+                    %strong Check all notifications
+                    %i.fa.fa-angle-right
+          / ==============================================================
+          / End Comment
+          / ==============================================================
+          / ==============================================================
+          / Messages
+          / ==============================================================
+          %li.nav-item.dropdown
+            %a#2.nav-link.dropdown-toggle.text-muted.waves-effect.waves-dark{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => ""}
+              %i.mdi.mdi-email
+              .notify
+                %span.heartbit
+                %span.point
+            .dropdown-menu.mailbox.animated.bounceInDown{"aria-labelledby" => "2"}
+              %ul
+                %li
+                  .drop-title You have 4 new messages
+                %li
+                  .message-center
+                    / Message
+                    %a{:href => "#"}
+                      .user-img
+                        %img.img-circle{:alt => "user", :src => "../assets/images/users/1.jpg"}/
+                        %span.profile-status.online.pull-right
+                      .mail-contnet
+                        %h5 Pavan kumar
+                        %span.mail-desc Just see the my admin!
+                        %span.time 9:30 AM
+                    / Message
+                    %a{:href => "#"}
+                      .user-img
+                        %img.img-circle{:alt => "user", :src => "../assets/images/users/2.jpg"}/
+                        %span.profile-status.busy.pull-right
+                      .mail-contnet
+                        %h5 Sonu Nigam
+                        %span.mail-desc I've sung a song! See you at
+                        %span.time 9:10 AM
+                    / Message
+                    %a{:href => "#"}
+                      .user-img
+                        %img.img-circle{:alt => "user", :src => "../assets/images/users/3.jpg"}/
+                        %span.profile-status.away.pull-right
+                      .mail-contnet
+                        %h5 Arijit Sinh
+                        %span.mail-desc I am a singer!
+                        %span.time 9:08 AM
+                    / Message
+                    %a{:href => "#"}
+                      .user-img
+                        %img.img-circle{:alt => "user", :src => "../assets/images/users/4.jpg"}/
+                        %span.profile-status.offline.pull-right
+                      .mail-contnet
+                        %h5 Pavan kumar
+                        %span.mail-desc Just see the my admin!
+                        %span.time 9:02 AM
+                %li
+                  %a.nav-link.text-center{:href => "javascript:void(0);"}
+                    %strong See all e-Mails
+                    %i.fa.fa-angle-right
+          / ==============================================================
+          / End Messages
+          / ==============================================================
+          / ==============================================================
+          / Messages
+          / ==============================================================
+          %li.nav-item.dropdown.mega-dropdown
+            %a.nav-link.dropdown-toggle.text-muted.waves-effect.waves-dark{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => ""}
+              %i.mdi.mdi-view-grid
+            .dropdown-menu.animated.bounceInDown
+              %ul.mega-dropdown-menu.row
+                %li.col-lg-3.col-xlg-2.m-b-30
+                  %h4.m-b-20 CAROUSEL
+                  / CAROUSEL
+                  #carouselExampleControls.carousel.slide{"data-ride" => "carousel"}
+                    .carousel-inner{:role => "listbox"}
+                      .carousel-item.active
+                        .container
+                          %img.d-block.img-fluid{:alt => "First slide", :src => "../assets/images/big/img1.jpg"}/
+                      .carousel-item
+                        .container
+                          %img.d-block.img-fluid{:alt => "Second slide", :src => "../assets/images/big/img2.jpg"}/
+                      .carousel-item
+                        .container
+                          %img.d-block.img-fluid{:alt => "Third slide", :src => "../assets/images/big/img3.jpg"}/
+                    %a.carousel-control-prev{"data-slide" => "prev", :href => "#carouselExampleControls", :role => "button"}
+                      %span.carousel-control-prev-icon{"aria-hidden" => "true"}
+                      %span.sr-only Previous
+                    %a.carousel-control-next{"data-slide" => "next", :href => "#carouselExampleControls", :role => "button"}
+                      %span.carousel-control-next-icon{"aria-hidden" => "true"}
+                      %span.sr-only Next
+                  / End CAROUSEL
+                %li.col-lg-3.m-b-30
+                  %h4.m-b-20 ACCORDION
+                  / Accordian
+                  #accordion.nav-accordion{"aria-multiselectable" => "true", :role => "tablist"}
+                    .card
+                      #headingOne.card-header{:role => "tab"}
+                        %h5.mb-0
+                          %a{"aria-controls" => "collapseOne", "aria-expanded" => "true", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseOne"}
+                            Collapsible Group Item #1
+                      #collapseOne.collapse.show{"aria-labelledby" => "headingOne", :role => "tabpanel"}
+                        .card-body Anim pariatur cliche reprehenderit, enim eiusmod high.
+                    .card
+                      #headingTwo.card-header{:role => "tab"}
+                        %h5.mb-0
+                          %a.collapsed{"aria-controls" => "collapseTwo", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseTwo"}
+                            Collapsible Group Item #2
+                      #collapseTwo.collapse{"aria-labelledby" => "headingTwo", :role => "tabpanel"}
+                        .card-body Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                    .card
+                      #headingThree.card-header{:role => "tab"}
+                        %h5.mb-0
+                          %a.collapsed{"aria-controls" => "collapseThree", "aria-expanded" => "false", "data-parent" => "#accordion", "data-toggle" => "collapse", :href => "#collapseThree"}
+                            Collapsible Group Item #3
+                      #collapseThree.collapse{"aria-labelledby" => "headingThree", :role => "tabpanel"}
+                        .card-body Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                %li.col-lg-3.m-b-30
+                  %h4.m-b-20 CONTACT US
+                  / Contact
+                  %form
+                    .form-group
+                      %input#exampleInputname1.form-control{:placeholder => "Enter Name", :type => "text"}/
+                    .form-group
+                      %input#exampleInputEmail1.form-control{:placeholder => "Enter email", :type => "email"}/
+                    .form-group
+                      %textarea#exampleTextarea.form-control{:placeholder => "Message", :rows => "3"}
+                    %button.btn.btn-info{:type => "submit"} Submit
+                %li.col-lg-3.col-xlg-4.m-b-30
+                  %h4.m-b-20 List style
+                  / List style
+                  %ul.list-style-none
+                    %li
+                      %a{:href => "javascript:void(0)"}
+                        %i.fa.fa-check.text-success
+                        You can give link
+                    %li
+                      %a{:href => "javascript:void(0)"}
+                        %i.fa.fa-check.text-success
+                        Give link
+                    %li
+                      %a{:href => "javascript:void(0)"}
+                        %i.fa.fa-check.text-success
+                        Another Give link
+                    %li
+                      %a{:href => "javascript:void(0)"}
+                        %i.fa.fa-check.text-success
+                        Forth link
+                    %li
+                      %a{:href => "javascript:void(0)"}
+                        %i.fa.fa-check.text-success
+                        Another fifth link
+          / ==============================================================
+          / End Messages
+          / ==============================================================
+        / ==============================================================
+        / User profile and search
+        / ==============================================================
+        %ul.navbar-nav.my-lg-0
+          %li.nav-item.hidden-sm-down
+            %form.app-search
+              %input.form-control{:placeholder => "Search for...", :type => "text"}/
+              %a.srh-btn
+                %i.ti-search
+          %li.nav-item.dropdown
+            %a.nav-link.dropdown-toggle.text-muted.waves-effect.waves-dark{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => ""}
+              %img.profile-pic{:alt => "user", :src => "../assets/images/users/1.jpg"}/
+            .dropdown-menu.dropdown-menu-right.animated.flipInY
+              %ul.dropdown-user
+                %li
+                  .dw-user-box
+                    .u-img
+                      %img{:alt => "user", :src => "../assets/images/users/1.jpg"}/
+                    .u-text
+                      %h4 Steave Jobs
+                      %p.text-muted varun@gmail.com
+                      %a.btn.btn-rounded.btn-danger.btn-sm{:href => "profile.html"} View Profile
+                %li.divider{:role => "separator"}
+                %li
+                  %a{:href => "#"}
+                    %i.ti-user
+                    My Profile
+                %li
+                  %a{:href => "#"}
+                    %i.ti-wallet
+                    My Balance
+                %li
+                  %a{:href => "#"}
+                    %i.ti-email
+                    Inbox
+                %li.divider{:role => "separator"}
+                %li
+                  %a{:href => "#"}
+                    %i.ti-settings
+                    Account Setting
+                %li.divider{:role => "separator"}
+                %li
+                  %a{:href => "#"}
+                    %i.fa.fa-power-off
+                    Logout
+          %li.nav-item.dropdown
+            %a.nav-link.dropdown-toggle.text-muted.waves-effect.waves-dark{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => ""}
+              %i.flag-icon.flag-icon-us
+            .dropdown-menu.dropdown-menu-right.animated.bounceInDown
+              %a.dropdown-item{:href => "#"}
+                %i.flag-icon.flag-icon-in
+                India
+              %a.dropdown-item{:href => "#"}
+                %i.flag-icon.flag-icon-fr
+                French
+              %a.dropdown-item{:href => "#"}
+                %i.flag-icon.flag-icon-cn
+                China
+              %a.dropdown-item{:href => "#"}
+                %i.flag-icon.flag-icon-de
+                Dutch
