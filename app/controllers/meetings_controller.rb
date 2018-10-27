@@ -50,6 +50,10 @@ class MeetingsController < ApplicationController
     end
   end
 
+  def process_audio
+    file = params[:file]
+  end
+
   # DELETE /meetings/1
   # DELETE /meetings/1.json
   def destroy
