@@ -5223,7 +5223,7 @@
 	{
 		$(n)
 			.bind( 'click.DT', oData, function (e) {
-					n.blur(); // Remove focus outline for mouse users
+					n.blur(); // Remove focus outline for mouse employees
 					fn(e);
 				} )
 			.bind( 'keypress.DT', oData, function (e){

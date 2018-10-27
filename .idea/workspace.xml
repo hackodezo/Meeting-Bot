@@ -2,13 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d2e1152-da8b-42ed-8e5f-ef90a3a2b794" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Meeting-Bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Meeting-Bot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/javascripts/projects.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/projects.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/employees_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/projects_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/projects_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/project.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/employees/_form.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/employees/edit.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/employees/index.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/employees/new.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/_form.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/_project.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/edit.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/index.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/index.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/new.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/show.html.haml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/projects/show.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20181027104141_create_projects.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/fixtures/projects.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/models/project_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/system/projects_test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.rakeTasks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Meeting-Bot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/shared/_header.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/shared/_sidebar.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/shared/_header.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/shared/_header.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/shared/_sidebar.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/shared/_sidebar.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20181027051034_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20181027051034_devise_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/admin/assets/plugins/datatables/media/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/admin/assets/plugins/datatables/media/js/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/admin/assets/plugins/footable/src/js/FooTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/admin/assets/plugins/footable/src/js/FooTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/admin/assets/plugins/footable/src/js/components/filtering/FooTable.Filtering.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/admin/assets/plugins/footable/src/js/components/filtering/FooTable.Filtering.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/admin/assets/plugins/footable/src/js/components/paging/FooTable.Paging.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/admin/assets/plugins/footable/src/js/components/paging/FooTable.Paging.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/admin/assets/plugins/footable/src/js/components/sorting/FooTable.Sorting.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/admin/assets/plugins/footable/src/js/components/sorting/FooTable.Sorting.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/admin/assets/plugins/gridstack/lodash.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/admin/assets/plugins/gridstack/lodash.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/admin/assets/plugins/jqueryui/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/admin/assets/plugins/jqueryui/jquery-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/admin/assets/plugins/sweetalert/jquery.sweet-alert.custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/admin/assets/plugins/sweetalert/jquery.sweet-alert.custom.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -25,20 +64,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <state relative-caret-position="345">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secrets.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/secrets.yml">
+      <file leaf-file-name="audio_converter.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/audio_converter.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="32" />
+            <state relative-caret-position="75">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -56,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -90,6 +129,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>audio_file_path</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -100,7 +144,12 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/dashboard_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/watson.yml" />
+        <option value="$PROJECT_DIR$/config/initializers/watson.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/models/audio_converted.rb" />
+        <option value="$PROJECT_DIR$/app/models/audio_converter.rb" />
       </list>
     </option>
   </component>
@@ -158,7 +207,24 @@
               <item name="Meeting-Bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="Meeting-Bot" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Meeting-Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Meeting-Bot" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Meeting-Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Meeting-Bot" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Meeting-Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Meeting-Bot" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="initializers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -296,12 +362,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540616837057</updated>
-      <workItem from="1540616838368" duration="1976000" />
+      <workItem from="1540616838368" duration="6860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1976000" />
+    <option name="totallyTimeSpent" value="6860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="700" extended-state="0" />
@@ -353,7 +419,7 @@
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -378,10 +444,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/watson.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/watson.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        <state relative-caret-position="345">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/audio_converter.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
