@@ -43,7 +43,6 @@ $(document).ready(function(){
   });
   
   $(document).on("click", "#mp3:not(.disabled)", function(){
-    alert("The conversion to MP3 will take some time (even 10 minutes), so please wait....");
     Fr.voice.export(function(base64){
       var data = new FormData();
       data.append('file', base64);
@@ -55,14 +54,14 @@ $(document).ready(function(){
         contentType: false,
         processData: false,
         success: function(data) {
-          alert("done")
+          $('#meeting-content').html(data.message)
         }
-
   });
-
-
-
     }, "base64");
     restore();
   });
+
+
+
+
 });
