@@ -52,7 +52,20 @@ class MeetingsController < ApplicationController
 
   def process_audio
     file = params[:file]
+    audio_data = Base64.decode64(file['data:audio/ogg;base64,'.length .. -1])
+    save_path = Rails.root.join('public/audio')
+    unless File.exists?(save_path)
+      Dir::mkdir(Rails.root.join("public/audio"))
+    end
+    File.open(save_path+"_audio.ogg", 'wb') do |f| f.write audio_data end
+    flac_audio = convert_mp3_to_flac(save_path+"_audio.ogg")
+    AudioConverter.new(flac_audio).speech_streaming_recognize
   end
+
+  def convert_mp3_to_flac(file_path)
+    f_path = file_path.sub(".ogg", ".flac")
+    system("ffmpeg -i #{file_path} #{f_path}")
+  end 
 
   # DELETE /meetings/1
   # DELETE /meetings/1.json
