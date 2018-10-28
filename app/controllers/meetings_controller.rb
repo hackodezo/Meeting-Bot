@@ -64,7 +64,7 @@ class MeetingsController < ApplicationController
 
   def convert_mp3_to_flac(file_path)
     f_path = file_path.sub(".ogg", ".flac")
-    system("ffmpeg -i #{file_path} #{f_path}")
+    system("ffmpeg -i #{file_path} -ac 1 #{f_path}")
     f_path
   end 
 
