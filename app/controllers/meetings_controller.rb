@@ -54,12 +54,16 @@ class MeetingsController < ApplicationController
     file = params[:file]
     audio_data = Base64.decode64(file['data:audio/ogg;base64,'.length .. -1])
     save_path = Rails.root.join('public/audio')
+    file_path = "#{save_path}_audio_#{Time.now.strftime('%Y_%m_%d_%H_%M_%S')}.ogg"
     unless File.exists?(save_path)
       Dir::mkdir(Rails.root.join("public/audio"))
     end
-    File.open(save_path+"_audio.ogg", 'wb') do |f| f.write audio_data end
-    flac_audio = convert_mp3_to_flac(save_path+"_audio.ogg")
-    AudioConverter.new(flac_audio).speech_streaming_recognize
+    file = File.open(file_path, 'wb') do |f| f.write audio_data end
+    flac_audio = convert_mp3_to_flac(file_path)
+    message = AudioConverter.new(flac_audio).speech_streaming_recognize
+    respond_to do |format|
+      format.json {render json: {message: message} }
+    end
   end
 
   def convert_mp3_to_flac(file_path)

@@ -1,5 +1,13 @@
 %p#notice= notice
 
+%audio#audio{:controls => "", :src => ""}
+%div{:style => "margin:10px;"}
+  %a#record.button Record
+  %a#stop.button.disabled.one Reset
+  %a#mp3.button.disabled.one Stop
+#meeting-content
+
+
 %p
   %b Name:
   = @meeting.name
@@ -19,3 +27,4 @@
 = link_to 'Edit', edit_meeting_path(@meeting)
 \|
 = link_to 'Back', meetings_path
+

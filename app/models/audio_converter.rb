@@ -8,7 +8,7 @@ class AudioConverter
 
     speech = Google::Cloud::Speech.new
 
-    audio_content  = File.binread(Rails.root.join('public/audio/_audio.flac'))
+    audio_content  = File.binread(@audio)
     bytes_total    = audio_content.size
     bytes_sent     = 0
     chunk_size     = 32000
@@ -22,9 +22,12 @@ class AudioConverter
     audio  = { content: audio_content }
     response = speech.recognize(streaming_config[:config], audio)
     results = response.results
+    message = ""
+    return "nothing to transpile" unless results.first.present?
     results.first.alternatives.each do |alternatives|
-      puts "Transcription: #{alternatives.transcript}"
+      message += "#{alternatives.transcript}"
     end
-
+    puts message
+    message
   end
 end
