@@ -25,6 +25,7 @@
 
 .card
   .card-body  
+    =hidden_field_tag "meeting_id",params[:id]
     %h4.card-title Record Meeting
     %audio#audio{:controls => "", :src => ""}
     %div{:style => "margin:10px;"}
