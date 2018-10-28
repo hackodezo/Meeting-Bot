@@ -1,0 +1,2 @@
+class MeetingNote < ApplicationRecord
+end
