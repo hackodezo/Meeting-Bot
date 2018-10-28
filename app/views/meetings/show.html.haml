@@ -1,30 +1,37 @@
 %p#notice= notice
+.card
+  .card-body
+    %h4.card-title= @meeting.name
+    %ul.feeds
+      %li
+        %b Venue: 
+        #{@meeting.venue}
+      %li
+        %b Agenda:
+        #{@meeting.agenda}
+      %li
+        %b Meeting date:
+        = @meeting.meeting_date
+      %li
+        %b Meeting Duration:
+        = @meeting.meeting_date
+      %li
+        %b Meeting Duration 
+        = distance_of_time_in_words(@meeting.start_time, @meeting.end_time)
 
-%audio#audio{:controls => "", :src => ""}
-%div{:style => "margin:10px;"}
-  %a#record.button Record
-  %a#stop.button.disabled.one Reset
-  %a#mp3.button.disabled.one Stop
-#meeting-content
+    = link_to 'Edit', edit_meeting_path(@meeting)
+    = link_to 'Back', meetings_path
 
 
-%p
-  %b Name:
-  = @meeting.name
-%p
-  %b Venue:
-  = @meeting.venue
-%p
-  %b Agenda:
-  = @meeting.agenda
-%p
-  %b Meeting date:
-  = @meeting.meeting_date
-%p
-  %b Meeting Duration:
-  = distance_of_time_in_words(@meeting.start_time, @meeting.end_time)
-
-= link_to 'Edit', edit_meeting_path(@meeting)
-\|
-= link_to 'Back', meetings_path
-
+.card
+  .card-body  
+    %h4.card-title Record Meeting
+    %audio#audio{:controls => "", :src => ""}
+    %div{:style => "margin:10px;"}
+      %a#record.button Record
+      %a#stop.button.disabled.one Reset
+      %a#mp3.button.disabled.one Stop
+.card
+  .card-body
+    %h4.card-title Meeting Notes
+    #meeting-content
